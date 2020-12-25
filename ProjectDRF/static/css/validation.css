@@ -1,0 +1,26 @@
+/*Front validation css*/
+.form-field.success input{
+  border-color: #2ecc71;
+}
+.form-field.error input{
+  border-color: #e74c3c;
+  visibility: visible;
+}
+
+.review-form small{
+	color:#e74c3c;
+	visibility: visible;
+}
+
+.form-field.error small{
+	color:#e74c3c;
+	visibility: visible;
+}
+
+.form-control-search--review.error{
+	border-color: #e74c3c;
+}
+.form-control-search--review.success{
+	border-color: #2ecc71;
+}
+

@@ -1,0 +1,143 @@
+.job-post {
+  padding: 15px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+
+  &--recommend {
+    justify-content: space-between;
+    border-bottom: none;
+
+    &:last-child {
+      border-bottom: 1px solid #d9d9d9;
+    }
+  }
+
+  &--header {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+  }
+
+  &__u {
+    display: flex;
+    align-items: center;
+  }
+
+  &__l {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  &__shift {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color-tertiary;
+    padding: 5px;
+    border-radius: 1px;
+    margin-left: 15px;
+
+    span {
+      color: $color-secondary;
+      text-transform: capitalize;
+    }
+  }
+
+  &__tag {
+    padding: 3px 5px;
+    color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #d9d9d9;
+    text-transform: capitalize;
+    border-radius: 2px;
+
+    &--header {
+      background: #fff;
+    }
+  }
+
+  &__location {
+    margin-left: 8px;
+    display: flex;
+    color: rgba(0, 0, 0, 0.45);
+
+    &--header {
+      color: #fff;
+    }
+
+    .md {
+      margin-top: 2px;
+      font-size: 12px;
+    }
+
+    span {
+      font-size: 11px;
+      text-transform: capitalize;
+      margin-left: 2px;
+    }
+  }
+
+  &__time {
+    margin-left: 8px;
+    display: flex;
+    color: rgba(0, 0, 0, 0.45);
+
+    &--header {
+      color: #fff;
+    }
+
+    span {
+      font-size: 11px;
+      text-transform: capitalize;
+      margin-left: 2px;
+    }
+
+    .md {
+      margin-top: 2px;
+      font-size: 12px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__inner {
+    display: flex;
+  }
+}
+
+.company-logo {
+  height: 60px;
+  width: 60px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+
+  img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    object-position: top;
+  }
+}

@@ -1,0 +1,65 @@
+.form-control-search {
+  height: 45px;
+  border: 1px solid #d9d9d9;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 3px;
+
+  input {
+    border: none;
+    text-indent: 10px;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+    width: 100%;
+    height: 43px;
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.45);
+      text-transform: capitalize;
+      font-size: 14px;
+    }
+  }
+  .md {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.45);
+    margin-right: 8px;
+  }
+
+  &--review {
+    margin-top: 8px;
+
+    &:focus-within {
+      border-color: #66afe9;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+        0 0 8px rgba(102, 175, 233, 0.6);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+        0 0 8px rgba(102, 175, 233, 0.6);
+    }
+
+    input {
+      width: 100%;
+      height: 40px;
+      font-size: 14px;
+    }
+
+    .md {
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.45);
+      margin-right: 12px;
+    }
+  }
+}
+
+.form-control {
+  height: 45px;
+  border: 1px solid #d9d9d9;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 3px;
+}

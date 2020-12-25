@@ -1,0 +1,90 @@
+.employer-profile-wrapper {
+  background: $color-tertiary;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.ta-tore {
+  align-items: center;
+}
+
+.employer-profile {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+
+  &__col-75 {
+    width: 75%;
+    margin-right: 20px;
+  }
+
+  &__details {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    padding: 20px;
+    &--margintop{ /*css change------------------*/
+      margin-top: 20px;
+    }
+    &--anchore{
+      font-size: 15px;
+      text-align: center;
+      display: block;
+      text-decoration: none;
+    }
+    
+  }
+
+
+
+  &__job-post {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 20px;
+  }
+
+  &__video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+
+    img {
+      width: 75%;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 3px;
+    }
+  }
+
+  &__col-25 {
+    width: 25%;
+    margin-left: 10px;
+  }
+
+  &__share {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  &__map {
+    margin-top: 10px;
+  }
+
+  &__gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    img {
+      width: 200px;
+      height: 120px;
+      object-position: top;
+      object-fit: cover;
+      border-radius: 3px;
+      margin: 5px;
+    }
+  }
+}

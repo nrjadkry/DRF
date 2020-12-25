@@ -1,0 +1,238 @@
+#login__register {
+  .header {
+    height: 15vh;
+  }
+}
+.login {
+  background: $color-tertiary;
+  &__title {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: $color-primary-dark;
+    @media (min-width: 768) {
+      font-size: 25px;
+      line-height: 32px;
+    }
+  }
+  &__jobs__block {
+    padding: 20px;
+    box-shadow: 0 1px 1px 1px rgba(127, 127, 127, 0.3);
+    margin-bottom: 0px;
+    margin: 0 25px;
+
+    @media (min-width: 768px) {
+      margin: 0 auto;
+      padding: 40px 30px 40px;
+      margin-bottom: 20px;
+    }
+  }
+  &__legalContain {
+    font-size: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    @media (min-width: 480px) {
+      font-size: 12px;
+    }
+  }
+  &__contact {
+    input {
+      height: 46px;
+      margin-bottom: 9px;
+      font-size: 16px;
+      border: 1px solid #c1c1c1;
+    }
+    &__btn {
+      .btn--contact {
+        width: 70%;
+        margin: 0 auto;
+        line-height: 46px;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+    }
+    /* register css flex start  */
+    &--flex {
+      display: flex;
+      padding: 0px 0px;
+      flex-direction: column;
+      @media (min-width: 480px) {
+        padding: 0px 30px;
+      }
+      @media (min-width: 768px) {
+        flex-direction: row;
+        padding: 0px 0px;
+      }
+
+      &__right {
+        width: 100%;
+        @media (min-width: 768px) {
+          width: 50%;
+        }
+      }
+      &__left {
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+
+        @media (min-width: 768px) {
+          width: 50%;
+        }
+
+        &--contain {
+          font-size: 14px;
+          line-height: 26px;
+          padding-top: 0px;
+          padding-left: 15px;
+          padding-right: 0px;
+          margin-bottom: 10px;
+          @media (min-width: 480px) {
+            font-size: 15px;
+          }
+          @media (min-width: 768px) {
+            font-size: 14px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 10px;
+          }
+        }
+        &--icon {
+          padding-top: 4px;
+          color: $color-secondary;
+          @media (min-width: 768px) {
+            padding-top: 8px;
+          }
+          svg {
+            background-color: $color-tertiary;
+          }
+        }
+      }
+    }
+    /* register css  flex end */
+  }
+  &__anchor {
+    text-decoration: none;
+    color: #8e6e6e;
+  }
+  &__social {
+    button {
+      &:focus {
+        border-color: rgba(127, 127, 127, 0.3);
+      }
+    }
+    &__icon {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 9px;
+      background: white;
+      border: 1px solid #c1c1c1;
+      border-radius: 3px;
+      cursor: pointer;
+      @media (min-width: 768px) {
+        padding: 12px;
+      }
+      &--facebook {
+        background-color: #1877f2;
+        span {
+          .label {
+            color: #fff;
+          }
+          i {
+            color: #fff;
+          }
+        }
+      }
+      &--google {
+        span {
+          .label {
+            color: #dc4e41;
+          }
+          i {
+            color: #dc4e41;
+          }
+        }
+      }
+      &--linkedin {
+        span {
+          .label {
+            color: #0a66c2;
+          }
+          i {
+            color: #0a66c2;
+          }
+        }
+      }
+    }
+    &__span {
+      display: flex;
+      margin-left: 6px;
+      i {
+        padding-right: 8px;
+        font-size: 18px;
+      }
+
+      .label {
+        font-size: 16px;
+        color: #8c8c8c;
+      }
+    }
+  }
+
+  &__or {
+    font-size: 15px;
+    font-weight: 600;
+    color: $color-primary;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--first {
+      width: 100%;
+      height: 3px;
+      background-color: #eaeaea;
+    }
+    &--middle {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  &__forgot__password {
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 16px;
+  }
+  &__signup__section {
+    margin: 0px 15px;
+  }
+  &__signUp__part {
+    font-size: 16px;
+    padding-top: 15px;
+    text-align: center;
+    &--borderTop {
+      border-top: 1px solid #c1c1c1;
+    }
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 576px) {
+      width: 450px;
+      margin: 0 auto;
+    }
+
+    /* register css  */
+    &__register {
+      @media (min-width: 768px) {
+        width: 720px;
+        margin: 0 auto;
+      }
+      &--flex {
+        display: flex;
+      }
+    }
+  }
+}

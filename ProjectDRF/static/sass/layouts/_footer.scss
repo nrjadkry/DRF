@@ -1,0 +1,88 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: #fff;
+}
+
+.footer {
+  width: 992px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__child {
+    margin-right: 25px;
+  }
+
+  &__logo {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__contact {
+    padding: 15px 0px;
+    font-size: 13px;
+
+    &__title {
+      font-weight: 600;
+      text-transform: capitalize;
+      padding-bottom: 5px;
+    }
+
+    &__value {
+      color: rgba(0, 0, 0, 0.45);
+      white-space: nowrap;
+
+      &--address {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 20px;
+      background: #ff4800;
+      left: 0;
+      bottom: 0;
+    }
+
+    &--mini {
+      margin-top: 10px;
+
+      a {
+        color: rgba(0, 0, 0, 0.45);
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 12px;
+
+        .md {
+          margin-right: 10px;
+        }
+
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+}
+
+.copyright {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.45);
+  text-transform: capitalize;
+  margin: 25px 0px 60px;
+}

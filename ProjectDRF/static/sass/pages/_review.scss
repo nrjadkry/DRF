@@ -1,0 +1,148 @@
+.review {
+  width: 700px;
+  margin: 40px auto;
+
+  &__item {
+    margin-bottom: 25px;
+  }
+
+  &__label {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  &__situation {
+    display: flex;
+    border-bottom: none;
+    border-radius: 3px;
+    flex-wrap: wrap;
+
+    &__child {
+      width: 33.33%;
+      display: grid;
+      place-items: center;
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+      text-transform: capitalize;
+      cursor: pointer;
+      border-right: 1px solid #d9d9d9;
+      border-bottom: 1px solid #d9d9d9;
+      height: 45px;
+
+      &:nth-child(3n + 1) {
+        border-left: 1px solid #d9d9d9;
+      }
+
+      &:not(:nth-child(1n + 4)) {
+        border-top: 1px solid #d9d9d9;
+      }
+
+      &:hover {
+        background: $color-secondary;
+        color: #fff;
+      }
+    }
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: space-between;
+
+    &__comment {
+      display: none;
+    }
+  }
+
+  &__star {
+    i {
+      font-size: 35px;
+      padding-right: 12px;
+      cursor: pointer;
+    }
+  }
+
+  &__benefits {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__child {
+      height: 45px;
+      border: 1px solid #d9d9d9;
+      border-radius: 3px;
+      margin: 5px;
+      font-size: 14px;
+      display: grid;
+      place-items: center;
+      flex-grow: 1;
+      padding: 5px;
+      cursor: pointer;
+      text-transform: capitalize;
+      font-weight: 600;
+      transition: transform 300ms;
+
+      &:hover {
+        background: $color-secondary;
+        color: #fff;
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__recommend {
+    display: flex;
+    border: 1px solid #d9d9d9;
+
+    &__child {
+      height: 45px;
+      text-transform: capitalize;
+      display: grid;
+      place-items: center;
+      width: 50%;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        border-right: 1px solid #d9d9d9;
+      }
+
+      &:hover {
+        color: #fff;
+        background: $color-secondary;
+      }
+    }
+  }
+
+  &__switch {
+    font-size: 16px;
+    color: $color-secondary;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+.rating-text {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 10px;
+}

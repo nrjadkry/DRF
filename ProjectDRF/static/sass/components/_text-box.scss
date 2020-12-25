@@ -1,0 +1,75 @@
+.text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__primary {
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: capitalize;
+  }
+
+  &__secondary {
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+
+  &--sm {
+    &__primary {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.2;
+      text-transform: capitalize;
+    }
+
+    &__secondary {
+      font-size: 10px;
+      text-transform: capitalize;
+      align-self: flex-start;
+    }
+  }
+
+  &--md {
+    &__primary {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin-bottom: 3px;
+    }
+
+    &__secondary {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.45);
+      text-transform: capitalize;
+    }
+  }
+  &--newsletter {
+    &__primary {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin-bottom: 3px;
+      white-space: nowrap;
+    }
+
+    &__secondary {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.45);
+      text-transform: capitalize;
+      white-space: nowrap;
+    }
+  }
+  &--choice {
+    &__primary {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+
+    &__secondary {
+      font-size: 13px;
+      line-height: 1.2;
+      text-transform: capitalize;
+    }
+  }
+}
