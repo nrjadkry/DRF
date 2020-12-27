@@ -108,3 +108,6 @@ class StudentAPI(APIView):
 		stu=Student.objects.get(pk=id)
 		stu.delete()
 		return Response({'msg':'Data deleted'})
+
+# ViewSet
+from rest_framework import viewsets
